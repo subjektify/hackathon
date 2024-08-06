@@ -1,0 +1,37 @@
+subject Hackathon {
+    state: HackathonState,
+    behaviors: [Register, SubmitApplication]
+}
+
+structure HackathonState {
+    hackers: Hackers,
+    staff: Staff
+}
+
+list Hackers {
+    member: Hacker
+}
+
+structure Hacker {
+    id: address,
+    name: string
+}
+
+list Staff {
+    member: address
+}
+
+behavior Register {
+    input: address
+    output: none
+}
+
+behavior SubmitApplication {
+    input: Application
+    output: none
+}
+
+structure Application {
+    applicant: address,
+    link: string
+}
