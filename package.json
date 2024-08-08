@@ -2,8 +2,17 @@
     "name": "hackathon",
     "version": "0.1.0",
     "license": "MIT",
+    "scripts": {
+        "start": "subjektify start",
+        "build": "subjektify build",
+        "clean": "subjektify clean",
+        "codegen": "subjektify codegen",
+        "test": "subjektify test"
+    },
     "devDependencies": {
-        "@subjektifylabs/subjektify-toolbox": "^0.0.24",
-        "subjektify": "^0.0.36"
+        "@subjektifylabs/subjektify-toolbox": "^0.0.30",
+        "subjektify": "^0.0.39",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.5.2"
     }
 }
