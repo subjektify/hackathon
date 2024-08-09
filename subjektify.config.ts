@@ -9,6 +9,9 @@ const config: SubjektifyConfig = {
         sources: ["subjects"],
         outputDirectory: "artifacts"
     },
+    clean: {
+        paths: ["artifacts"]
+    },
     codegen: [
         {
             target: "client",
