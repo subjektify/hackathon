@@ -1,7 +1,9 @@
 // This is where you can define your model.
 subject Tree {
-    state: Dimensions
-    behavior: [PlantTree]
+    state: {
+        dimensions: Dimensions
+    }
+    behaviors: [PlantTree]
 }
 
 structure Dimensions {
@@ -9,4 +11,7 @@ structure Dimensions {
     height: double
 }
 
-behavior PlantTree
+behavior PlantTree {
+    input: Dimensions
+    output: none
+}

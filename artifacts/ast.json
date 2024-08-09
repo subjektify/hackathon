@@ -1,0 +1,146 @@
+{
+  "metadata": {},
+  "shapes": {
+    "hackathon#Hackathon": {
+      "type": "subject",
+      "state": {
+        "hackers": {
+          "target": {
+            "namespace": "hackathon",
+            "identifier": "Hackers"
+          }
+        },
+        "staff": {
+          "target": {
+            "namespace": "hackathon",
+            "identifier": "Staff"
+          }
+        }
+      },
+      "behaviors": [
+        {
+          "target": {
+            "namespace": "hackathon",
+            "identifier": "Register"
+          }
+        },
+        {
+          "target": {
+            "namespace": "hackathon",
+            "identifier": "SubmitApplication"
+          }
+        }
+      ],
+      "events": [],
+      "traits": {}
+    },
+    "hackathon#HackathonState": {
+      "type": "structure",
+      "members": {
+        "hackers": {
+          "target": {
+            "namespace": "hackathon",
+            "identifier": "Hackers"
+          }
+        },
+        "staff": {
+          "target": {
+            "namespace": "hackathon",
+            "identifier": "Staff"
+          }
+        }
+      },
+      "traits": {}
+    },
+    "hackathon#Hackers": {
+      "type": "list",
+      "member": {
+        "target": {
+          "namespace": "hackathon",
+          "identifier": "Hacker"
+        }
+      },
+      "traits": {}
+    },
+    "hackathon#Hacker": {
+      "type": "structure",
+      "members": {
+        "id": {
+          "target": {
+            "namespace": "subjekt",
+            "identifier": "address"
+          }
+        },
+        "name": {
+          "target": {
+            "namespace": "subjekt",
+            "identifier": "string"
+          }
+        }
+      },
+      "traits": {}
+    },
+    "hackathon#Staff": {
+      "type": "list",
+      "member": {
+        "target": {
+          "namespace": "subjekt",
+          "identifier": "address"
+        }
+      },
+      "traits": {}
+    },
+    "hackathon#Register": {
+      "type": "behavior",
+      "input": {
+        "target": {
+          "namespace": "subjekt",
+          "identifier": "address"
+        }
+      },
+      "output": {
+        "target": {
+          "namespace": "subjekt",
+          "identifier": "none"
+        }
+      },
+      "errors": [],
+      "traits": {}
+    },
+    "hackathon#SubmitApplication": {
+      "type": "behavior",
+      "input": {
+        "target": {
+          "namespace": "hackathon",
+          "identifier": "Application"
+        }
+      },
+      "output": {
+        "target": {
+          "namespace": "subjekt",
+          "identifier": "none"
+        }
+      },
+      "errors": [],
+      "traits": {}
+    },
+    "hackathon#Application": {
+      "type": "structure",
+      "members": {
+        "applicant": {
+          "target": {
+            "namespace": "subjekt",
+            "identifier": "address"
+          }
+        },
+        "link": {
+          "target": {
+            "namespace": "subjekt",
+            "identifier": "string"
+          }
+        }
+      },
+      "traits": {}
+    }
+  }
+}

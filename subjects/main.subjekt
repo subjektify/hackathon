@@ -1,5 +1,8 @@
 subject Hackathon {
-    state: HackathonState,
+    state: {
+        hackers: Hackers,
+        staff: Staff
+    },
     behaviors: [Register, SubmitApplication]
 }
 

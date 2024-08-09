@@ -10,8 +10,8 @@
         "test": "subjektify test"
     },
     "devDependencies": {
-        "@subjektifylabs/subjektify-toolbox": "^0.0.31",
-        "subjektify": "^0.0.40",
+        "@subjektifylabs/subjektify-toolbox": "^0.0.32",
+        "subjektify": "^0.0.41",
         "ts-node": "^10.9.2",
         "typescript": "^5.5.2"
     }
